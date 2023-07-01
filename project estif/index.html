@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estifanos Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<div id="header">  
+    <div class="container">
+        <nav>
+            <img src="images/logo-true.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Computer science Student</p>
+            <h1>Hi, I'm <span>Estifanos</span> <br> Dejene From Ethiopia </h1> 
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+                </div>
+               <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"Hello, I'm Estifanos Dejene, and I'm a computer science student. Welcome to my website! As a student of computer science, I have a passion for technology and the ways it can be used to solve complex problems.
+
+                    I'm currently pursuing a Bachelor's degree in Computer Science from XYZ University, and have completed several programming courses in languages such as Java, Python, and C++. I'm particularly interested in web development and have experience in front-end development using HTML, CSS, and JavaScript.
+                    
+                    When I'm not studying or coding, you can find me playing video games or tinkering with my own projects. I believe that staying curious and constantly learning is essential in the field of computer science, and I'm always looking for new challenges and opportunities to expand my knowledge.
+                    
+                    If you're interested in learning more about my skills and experience, or just want to say hello, feel free to contact me. I'm always open to new connections and collaborations. Thank you for visiting my website, and I look forward to connecting with you!"</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/ios Apps</li>
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="experience"> 
+                    <ul>
+                <li><span>2019-2020</span><br> Participated in computer desgin training at Addis Birhan institue </li>
+                <li><span>2019-2022</span><br>took online course on computer design</li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-current</span><br>Undergraduate at Debre Tabor University</li>
+                    </ul>
+
+                </div>
+               </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="Services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>I specialize in creating custom websites that are tailored to your business needs and goals. Whether you're looking to revamp an existing website or create a brand new one from scratch, I'm here to help.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>I specialize in designing user-friendly and visually appealing mobile applications for businesses and individuals. Whether you're looking to create a brand new app or improve an existing one, I'm here to help.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX</h2>
+                <p>As a UI/UX designer, I specialize in creating user-friendly and visually appealing digital experiences for businesses and individuals. Whether you're looking to revamp an existing website or create a brand new one from scratch, I'm here to help.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div> 
+
+    </div>
+
+</div>
+<div id="portfolio">
+    <div class="container">
+<h1 class="sub-title">My Work</h1>
+<div class="work-list">
+    <div class="Work">
+        <img src="images/work-1.png">
+        <div class="layer">
+            <h3>Social Media App</h3>
+            <p> The app connects you to talented people around the world.
+                download it from play store.</p>
+        </div>
+    </div>
+    <div class="Work">
+        <img src="images/work-2.png">
+        <div class="layer">
+            <h3>Music App</h3>
+            <p>This app helps you listen your favourite song.
+                download it from play store.</p>
+        </div>
+    </div>
+    <div class="Work">
+        <img src="images/work-3.png">
+        <div class="layer">
+        <h3>Online Shopping App</h3>
+        <p>This app helps you to shop online.
+        download it from play store.</p>
+        </div>
+    </div>
+</div>
+<a href="#" class="btn  ">See more</a>
+    </div>
+
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@Estifanosdejene9.com</p>
+                <p>0939946137</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/icon/facebook.png" alt="fb-icon"></a>
+                    <a href="#"><img src="./images/icon/github.png" alt="fb-icon"></a>
+                    <a href="#"><img src="./images/icon/instagram.png" alt="fb-icon"></a>
+                    <a href="#"><img src="./images/icon/twitter.png" alt="fb-icon"></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+      
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+     }
+
+    
+</script>
+</body>
+</html>
